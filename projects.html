@@ -12,10 +12,11 @@
         <link href="/static/css/font-awesome.min.css" rel="stylesheet">
 
 
+
     </head>
 
     <body style="background: url('/static/img/back2.jpg') no-repeat center center fixed; background-size: cover; width:100%;">
-    <div>
+    <div  >
 
         <!-- Your site -->
         <div class="navbar navbar-warning navbar-fixed-top">
@@ -29,10 +30,10 @@
     </div>
     <div class="navbar-collapse collapse navbar-warning-collapse ">
         <ul class="nav navbar-nav" >
-            <li class="active"><a href="{{url_for('home')}}">Home</a></li>
+            <li ><a href="{{url_for('home')}}">Home</a></li>
             <li><a data-target="#modal-about" data-toggle="modal">About Me</a></li>
             <li><a data-target="#modal-resume" data-toggle="modal">Resume</a></li>
-            <li ><a href="{{url_for('projects')}}">Projects</a></li>
+            <li class="active"><a href="{{url_for('projects')}}">Projects</a></li>
         </ul>
       
     </div>
@@ -54,14 +55,90 @@
 <div id="sec1"  >
   <div class="container shadow-z-3" style="width:70%;background: #ffffff;">
     <div class="row">
-      <div class="col-md-12 text-center">
-        <h1>I am an IT Undergraduate from VJTI    </h1>
-        <p class="lead">With a flair for Technology<br> </p>
+      <div class="col-md-12 text-center" >
+        <h1>Projects</h1>
+        <p class="lead">The best way to learn, is by experience.<br> </p>
       </div>
     </div>
   </div>
 </div>
 <br><br>
+<div id="sec2"  >
+  <div class="container shadow-z-3" style="width:70%;background: #ffffff;">
+    <div class="row">
+      <div class="col-md-12 text-center" >
+        <h1>TweetMin</h1>
+        <div class="row">
+        <div class="col-md-4">
+        <a href="http://chatttty.herokuapp.com/">
+         <img class="img" src="static/img/tweetmin.jpg" style="width:200px; height:200px;"></a>
+         </div>
+         <div class="col-md-4">
+        <p class="lead">A simple Tweeting application built in Flask a Python Micro Framework.It is currently hosted on heroku.<a href="http://chatttty.herokuapp.com/">Here</a> have a look<br> </p>
+       </div>
+      </div>
+    </div>
+  </div>
+</div>
+<br><br>
+
+<div id="sec3"  >
+  <div class="container shadow-z-3" style="width:70%;background: #ffffff;">
+    <div class="row">
+      <div class="col-md-12 text-center" >
+        <h1>Technovanza</h1>
+        <div class="row">
+        <div class="col-md-4">
+        <a href="http://technovanza.org">
+         <img class="img-circle" src="static/img/technologo.png" style="width:200px; height:200px;"></a>
+         </div>
+         <div class="col-md-4">
+        <p class="lead">VJTI's Technical Festival's Website, Developed in PHP.The Website is hosted online, and annually updated by the Festival's Committee.<a href="http://technovanza.org">Here</a> have a look<br> </p>
+       </div>
+      </div>
+    </div>
+  </div>
+</div>
+<br><br>
+</div>
+<div id="sec4" >
+  <div class="container shadow-z-3" style="width:70%;background: #ffffff;">
+    <div class="row">
+      <div class="col-md-12 text-center" >
+        <h1>Gourmand</h1>
+        <div class="row">
+        <div class="col-md-4">
+        
+         <img class="img-circle" src="static/img/gourmand.png" style="width:200px; height:200px;"></a>
+         </div>
+         <div class="col-md-4">
+        <p class="lead">A Restaurant Finder Android Application with a Remote Server in Python. Developed in collaboration for the Credit Suisse VJTI Coding Competition. Code for the Android App is <a href="https://github.com/eashan/gourmand">here</a> </p>
+       </div>
+      </div>
+    </div>
+  </div>
+</div>
+<br><br>
+</div>
+<div id="sec4" >
+  <div class="container shadow-z-3" style="width:70%;background: #ffffff;">
+    <div class="row">
+      <div class="col-md-12 text-center" >
+        <h1>Butler Bot</h1>
+        <div class="row">
+        <div class="col-md-4">
+        
+         <img class="img-circle" src="static/img/butler.jpg" style="width:200px; height:200px;"></a>
+         </div>
+         <div class="col-md-4">
+        <p class="lead">A Microsoft Kinect based Person tracking and following robot, with a c# based visual-studio program to run the kinict api.<a href="https://www.youtube.com/watch?v=WLHCwY1lKhE">Here</a> is our Demonstration.The basic api can be found   <a href="https://github.com/eashan/Butler-bot">here</a> </p>
+       </div>
+      </div>
+    </div>
+  </div>
+</div>
+<br><br>
+</div>
 <div id="sec2"  >
   <div class="container shadow-z-3" style="width:50%;background: #ffffff;">
     <div class="row">
@@ -101,7 +178,7 @@
         <h3 class="modal-title">About Me</h3>
       </div>
       <div class="modal-body">
-        <h4>I am a Software Developer by skill and an entrepreneur by heart, I have always strived to learn new Technologies, I believe that the best way to learn any Technology, is to apply it, which is why I take up Projects and see them through, this gives me tremendous exposure to the enviornment. </h4>
+       <h4>I am an IT Undergraduate from VJTI, I believe that I am a Software Developer by skill and an entrepreneur by heart, I have always strived to learn new Technologies, I believe that the best way to learn any Technology, is to apply it, which is why I take up Projects and see them through, this gives me tremendous exposure to the enviornment. </h4>
       </div>
       
     </div>
@@ -116,10 +193,9 @@
         <h3 class="modal-title">Resume</h3>
       </div>
       <div class="modal-body">
-      <object data="/static/doc/ResumeN.pdf" type="application/pdf" width="95%" height="90%">
+       <object data="/static/doc/ResumeN.pdf" type="application/pdf" width="95%" height="90%">
        <embed src="/static/doc/ResumeN.pdf" width="95%" height="90%"/>
-       </object>
-      </div>
+       </object>      </div>
       
     </div>
   </div>
